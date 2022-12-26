@@ -278,7 +278,7 @@
                         <img src="./assets/img/portfolio/portfolio-3.png" alt="..." class="img-fluid">
                         <div class="portfolio__text">
                             <span>Design Inspiration</span>
-                            <h2><a href="https://suhag10.github.io/bangladesh-visit/">Bangladesh Visit</h2>
+                            <h2><a target="_blank" href="https://suhag10.github.io/bangladesh-visit/">Bangladesh Visit</h2>
                         </div>
                     </div>
                 </div>
@@ -287,7 +287,7 @@
                         <img src="./assets/img/portfolio/portfolio-1.png" alt="..." class="img-fluid">
                         <div class="portfolio__text">
                             <span>HTML & CSS</span>
-                            <h2><a href="https://suhag10.github.io/16D-victory-day-bd-project/">Victory day</h2>
+                            <h2><a target="_blank" href="https://suhag10.github.io/16D-victory-day-bd-project/">Victory day</h2>
                         </div>
                     </div>
                 </div>
@@ -296,7 +296,7 @@
                         <img src="./assets/img/portfolio/portfolio-4.png" alt="..." class="img-fluid">
                         <div class="portfolio__text">
                             <span>Web Design</span>
-                            <h2><a href="https://suhag10.github.io/digital-marketplace/">Digital Marketplace</a></h2>
+                            <h2><a target="_blank" href="https://suhag10.github.io/digital-marketplace/">Digital Marketplace</a></h2>
                         </div>
                     </div>
                 </div>
@@ -305,7 +305,7 @@
                         <img src="./assets/img/portfolio/portfolio-4.png" alt="..." class="img-fluid">
                         <div class="portfolio__text">
                             <span>Web Design</span>
-                            <h2><a href="https://suhag10.github.io/hobi-personal-portfolio/">Hobi Personal Portfolio</a></h2>
+                            <h2><a target="_blank" href="https://suhag10.github.io/hobi-personal-portfolio/">Hobi Personal Portfolio</a></h2>
                         </div>
                     </div>
                 </div>
@@ -314,7 +314,7 @@
                         <img src="./assets/img/portfolio/portfolio-2.png" alt="..." class="img-fluid">
                         <div class="portfolio__text">
                             <span>JavaScript</span>
-                            <h2><a href="https://suhag10.github.io/project-video-player-js/">Video Player</a></h2>
+                            <h2><a target="_blank" href="https://suhag10.github.io/project-video-player-js/">Video Player</a></h2>
                         </div>
                     </div>
                 </div>
@@ -323,7 +323,7 @@
                         <img src="./assets/img/portfolio/portfolio-4.png" alt="..." class="img-fluid">
                         <div class="portfolio__text">
                             <span>Web Design</span>
-                            <h2><a href="https://suhag10.github.io/project-xisen/">Project Xisen</a></h2>
+                            <h2><a target="_blank" href="https://suhag10.github.io/project-xisen/">Project Xisen</a></h2>
                         </div>
                     </div>
                 </div>
@@ -332,7 +332,7 @@
                         <img src="./assets/img/portfolio/portfolio-4.png" alt="..." class="img-fluid">
                         <div class="portfolio__text">
                             <span>Web Design</span>
-                            <h2><a href="https://suhag10.github.io/project-bemax/">Project Bemax</a></h2>
+                            <h2><a target="_blank" href="https://suhag10.github.io/project-bemax/">Project Bemax</a></h2>
                         </div>
                     </div>
                 </div>
@@ -341,7 +341,7 @@
                         <img src="./assets/img/portfolio/portfolio-4.png" alt="..." class="img-fluid">
                         <div class="portfolio__text">
                             <span>Web Design</span>
-                            <h2><a href="https://suhag10.github.io/project-nubis/">Project Nubis</a></h2>
+                            <h2><a target="_blank" href="https://suhag10.github.io/project-nubis/">Project Nubis</a></h2>
                         </div>
                     </div>
                 </div>
