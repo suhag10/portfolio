@@ -1,0 +1,757 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+  Theme Name: Plexus Two
+  Author: Suhag Ahmed
+  Support: hellosuhag140@gmail.com
+  Version: 1.2.0
+
+-----------------------------------------------------------------------------------*/
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+/* @import 'name.css'; */
+:root {
+    --px-primary: #7127ea;
+    --px-secondary: #e6ebf3;
+    --px-success: #198754;
+    --px-info: #0dcaf0;
+    --px-warning: #ffc107;
+    --px-danger: #dc3545;
+    --px-light: #f8f9fa;
+    --px-dark: #212529;
+    --px-black: #000;
+    --px-white: #fff;
+    --px-gray: #6c757d;
+    --px-gray-dark: #343a40;
+    --px-h-color:#070337;
+    --px-body-font-family: "Open Sans", sans-serif;
+    --px-body-font-size: 14px;
+    --px-body-font-weight: 400;
+    --px-body-line-height: 1.5;
+    --px-body-color: var(--px-gray);
+    --px-body-bg: #fff;
+    --px-link-color: var(--px-primary);
+    --px-link-hover-color: #6100ff;
+    --px-code-color: #d63384;
+    --px-highlight-bg: #fff3cd;
+    --px-primary-rgb: 113 39 234;
+    --px-secondary-rgb: 230 235 243;
+    --px-success-rgb: 25,135,84;
+    --px-info-rgb: 13,202,240;
+    --px-warning-rgb: 255,193,7;
+    --px-danger-rgb: 220,53,69;
+    --px-light-rgb: 248,249,250;
+    --px-dark-rgb: 33,37,41;
+    --px-black-rgb: 0,0,0;
+    --px-white-rgb: 255,255,255;
+}
+
+
+
+
+
+
+
+.ml-45 {margin-left: 45px;}
+
+
+
+/* .sidebar__area .mean-bar
+--------------------------------------- */
+.sidebar__area .mean-bar #nav_menu li {margin-right: 0px;}
+
+.sidebar__area .mean-bar {
+    background-color: var(--px-secondary);
+    border-radius: 4px;
+}
+
+.sidebar__area .mean-bar a.meanmenu-reveal {color: var(--px-black);}
+.sidebar__area .mean-bar a.meanmenu-reveal span{background: var(--px-black);}
+
+/* search-form_btn */
+.search-form_btn form input:focus-visible {
+    border: 2px solid var(--px-primary) !important;
+    outline: none;
+}
+
+.search-form_btn form input {
+    border: 2px solid #b0bec5;
+    border-radius: 4px;
+    height: 40px;
+    padding: 3px;
+    color: #607d8b;
+    background: #fff;
+}
+
+.sidebar__login {
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+/*===========================================
+  03. Slider CSS
+===========================================*/
+#slider{}
+
+
+
+
+
+
+
+
+
+
+
+/*===========================================
+  11. Blog CSS
+===========================================*/
+.blog__setup:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.blog__post{
+    background: var(--px-body-bg);
+    padding: 10px;
+    border: 1px solid #dce0e7;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.post__thumbnails{
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.post__thumbnails img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-out;
+}
+
+.post__thumbnails a:hover img {
+    transform: scale(1.1);
+}
+
+.post__metabox a {
+    margin-right: 15px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.post__metabox a span {
+    margin-right: 4px;
+}
+
+.post__tag a {
+    font-size: 13px !important;
+    margin-right: 6px;
+}
+
+.post__details h2 {font-size: 30px;}
+
+.post__details p {
+    color: #6c6a8a !important;
+    text-align: justify;
+}
+
+.post__details ol li {
+    list-style: auto;
+}
+
+/*===========================================
+  12. Page Nav CSS
+===========================================*/
+#page__nav .pages {
+    background: var(--px-gray);
+    color: #fff !important;
+    padding: 5px 10px;
+}
+
+#page__nav .page-numbers {
+    background: var(--px-gray);
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+
+#page__nav .page-numbers:hover {
+    background: var(--px-primary);
+}
+
+#page__nav .page-numbers.current {
+    color: var(--px-white);
+    background: var(--px-primary);
+}
+
+/*===========================================
+  13. Comments CSS
+===========================================*/
+.comment_list li {
+    position: relative;
+}
+
+.comment_list li .children{
+    padding-left: 4rem;
+}
+
+.comment_list li::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 24px;
+    width: 2px;
+    height: 100%;
+    background: var(--px-secondary);
+    z-index: -1;
+}
+
+.comment_list li::after {
+    width: 10px;
+    height: 10px;
+    background: var(--px-body-bg);
+    border: 2px solid var(--px-secondary);
+    border-radius: 50rem;
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: -2px;
+}
+
+.comment_list li .comment-body {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.comment_list li .comment-body::after {
+    background: var(--px-secondary);
+    width: 90.4%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.comment_list li .comment-body .comment-author img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 6px solid var(--px-body-bg);
+    background: #adbec7;
+    margin-right: 1rem;
+    overflow: hidden;
+    float: left;
+}
+
+.comment_list li .comment-body .comment-author cite {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0px;
+    color: var(--px-h-color);
+}
+
+.comment_list li .comment-body .comment-author span {
+    display: none !important;
+}
+
+.comment_list li .comment-body .commentmetadata {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.comment_list li .comment-body p {
+    background: var(--px-secondary);
+    font-weight: 400;
+    width: fit-content;
+    padding: 0 5px;
+    margin-top: 20px;
+    margin-left: 67px;
+    border-radius: 8px;
+}
+
+.comment_list li .comment-body .reply {
+    padding-left: 67px;
+}
+
+.comment_list .children li .comment-body::before {
+    position: absolute;
+    content: '';
+    top: -24px;
+    left: -40px;
+    width: 66px;
+    height: 50px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid var(--px-secondary);
+    border-left: 2px solid var(--px-secondary);
+    border-bottom-left-radius: 20px;
+    z-index: -1;
+}
+
+/* comments_box */
+/* .comments_box form {} */
+.comments_box form p {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments_box form textarea,
+.comments_box form input {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #cfd7e3;
+    border-radius: 4px;
+    padding: 6px 10px;
+    color: var(--px-gray);
+    margin-bottom: 20px;
+    outline: none !important;
+}
+
+.comments_box form textarea:focus-visible,
+.comments_box form input:focus-visible {
+    border-color: var(--px-primary);
+}
+
+.comments_box form label {
+    font-weight: 500;
+}
+
+/* .comments_box form textarea {} */
+/* .comments_box form input {} */
+
+.comments_box form .submit {
+    width: fit-content;
+    border-color: var(--px-primary);
+    background: transparent;
+    color: var(--px-primary);
+}
+
+.comments_box form .submit:hover {
+    color: var(--px-white);
+    background: var(--px-primary);
+}
+
+.comments_box form .required {
+    color: var(--px-danger);
+}
+
+.comment-form-cookies-consent {
+    flex-direction: row !important;
+    align-items: center;
+    column-gap: 10px;
+}
+.comment-form-cookies-consent input {margin: 0px !important;}
+
+#cancel-comment-reply-link {
+    color: var(--px-danger);
+}
+
+p.logged-in-as {
+    flex-direction: row !important;
+    column-gap: 10px;
+}
+
+/*===========================================
+  14. Sideber CSS
+===========================================*/
+#sidebar__area form {
+    position: relative;
+}
+
+#sidebar__area form input {
+    width: 100%;
+    height: 60px;
+    line-height: 56px;
+    font-size: 14px;
+    padding: 0 65px 0 10px;
+    background: rgb(var(--px-secondary-rgb) / 40%);
+    border: 2px solid rgb(var(--px-secondary-rgb) / 100%);
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#sidebar__area form input:focus {
+    border-color: var(--px-primary);
+}
+
+#sidebar__area form input::placeholder {
+    color: rgb(170 180 197);
+}
+
+#sidebar__area form button {
+    background: transparent;
+    border: none;
+    border-left: 2px solid rgb(var(--px-secondary-rgb) / 100%);
+    padding: 15px;
+    color: inherit;
+    margin-left: 0;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#sidebar__area form button {
+    outline: 2.5px solid transparent;
+    border-radius: 0 2px 2px 0;
+}
+
+#sidebar__area form button:focus {
+    outline-color: var(--px-primary);
+}
+
+#sidebar__area form button svg {
+    color: rgb(170 180 197);
+}
+
+/* wp search ----------------------
+-------------------------------- */
+.wp-block-search__inside-wrapper {
+    padding: 0 !important;
+    border: none !important;
+}
+  
+/* wp calendar ---------------------
+--------------------------------- */
+.wp-block-calendar table th {
+    font-weight: 500;
+    background: rgb(170 180 197);
+    color: #ffffff;
+}
+
+#today {
+    color: var(--px-primary);
+    background-color: var(--px-secondary);
+    font-weight: 500;
+}
+
+/* Categories ----------------------
+--------------------------------- */
+#sidebar__area ul li {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#sidebar__area ul li a{
+    color: #6a727f;
+    font-weight: 400;
+    padding-right: 10px;
+}
+
+#sidebar__area ul li a:hover{
+    color: var(--px-primary);
+}
+
+/* Recent Post ---------------------
+--------------------------------- */
+#sidebar__area ul.wp-block-latest-posts__list li {
+    margin-bottom: 1rem;
+}
+
+#sidebar__area ul.wp-block-latest-posts__list li .wp-block-latest-posts__featured-image {
+    height: 90px;
+    width: 90px;
+    margin-right: 14px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+#sidebar__area ul.wp-block-latest-posts__list li .wp-block-latest-posts__featured-image img {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#sidebar__area ul.wp-block-latest-posts__list li a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #132339;
+    line-height: 1;
+}
+
+#sidebar__area ul.wp-block-latest-posts__list li a:hover {
+    color: var(--px-primary);
+}
+
+#sidebar__area ul.wp-block-latest-posts__list li time {
+    font-size: 14px;
+    color: #6a727f;
+    font-weight: 600;
+}
+
+/* Recent Comment ---------------------
+------------------------------------ */
+#sidebar__area ol.wp-block-latest-comments {
+    padding-left: 60px;
+}
+
+#sidebar__area ol.wp-block-latest-comments li {
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+}
+
+#sidebar__area ol.wp-block-latest-comments li article {
+    position: relative;
+}
+
+#sidebar__area ol.wp-block-latest-comments li article::before {
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.4;
+    content: '\f075';
+    position: absolute;
+    top: 0;
+    left: -53px;
+    color: currentColor;
+    background-color: var(--px-secondary);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50rem;
+}
+
+#sidebar__area ol.wp-block-latest-comments li article .wp-block-latest-comments__comment-meta {
+    color: #132339;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+#sidebar__area ol.wp-block-latest-comments li article .wp-block-latest-comments__comment-excerpt p {
+    font-size: 0.850rem;
+    font-weight: 400;
+    background: rgb(var(--px-secondary-rgb) / 40%);
+    padding: 0 4px;
+    border-radius: 4px;
+}
+
+/* Tags -------------------------------
+------------------------------------ */
+#sidebar__area .wp-block-tag-cloud a {
+    font-size: 13px !important;
+    color: #6a727f;
+    font-weight: 600;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    text-decoration: none;
+    background: var(--px-secondary);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+#sidebar__area .wp-block-tag-cloud a:hover {
+    color: #ffffff;
+    background: var(--px-primary);
+}
+
+/* #sidebar__area .child_sidebar :nth-child ----------------------------
+--------------------------------------------------------------------- */
+#sidebar__area .child_sidebar:nth-child(1) {margin-bottom: 2rem;}
+#sidebar__area .child_sidebar:nth-child(2) {margin-bottom: 1rem;}
+#sidebar__area .child_sidebar:nth-child(3) {margin-bottom: 1.8rem;}
+#sidebar__area .child_sidebar:nth-child(4) {margin-bottom: 3.8rem;}
+#sidebar__area .child_sidebar:nth-child(5) {margin-bottom: 1.8rem;}
+#sidebar__area .child_sidebar:nth-child(6) {margin-bottom: 2rem;padding-bottom: 4rem;}
+#sidebar__area .child_sidebar:nth-child(7) {margin-bottom: 1.8rem;}
+#sidebar__area .child_sidebar:nth-child(8) {margin-bottom: 3.8rem;}
+#sidebar__area .child_sidebar:nth-child(9) {margin-bottom: 1.8rem;}
+#sidebar__area .child_sidebar:nth-child(10) {margin-bottom: 3.8rem;}
+
+/*===========================================
+  16. Author CSS
+===========================================*/
+.author__cover {
+    background: linear-gradient(180deg,rgb(255 255 255 / 20%) 0%,#ffffff 100%);
+    position: relative;
+}
+
+.author__thumbnail {
+    background-color: #90a4ae;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.5rem;
+}
+
+.author__thumbnail img {
+    width: 100%;
+    height: 150%;
+    position: absolute;
+    top: -26%;
+}
+
+.author__details {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.author__avatar {
+    border-radius: 50rem;
+    margin-right: 30px;
+    position: relative;
+}
+
+.author__avatar::before {
+    position: absolute;
+    content: '';
+    background: #90a4ae;
+    width: 20px;
+    height: 20px;
+    border-radius: 50rem;
+    right: 14px;
+    bottom: 0;
+    border: 3px solid var(--px-body-bg);
+}
+
+.logged-in .author__avatar::before{
+    background: var(--px-primary);
+}
+
+.author__avatar .avatar {
+    background-color: #90a4ae;
+    border-radius: 50rem;
+    overflow: hidden;
+}
+
+.about__description {
+    padding: 12px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 7px -4px #37474f;
+}
+
+.about__description h3 {
+    box-shadow: 0 1px 0 0 rgb(var(--px-dark-rgb), 15%);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.6rem;
+}
+
+.blur__overlay {
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.blur__overlay img {
+    width: 100%;
+    height: 100%;
+}
+
+/*===========================================
+  18. Contact Form CSS
+===========================================*/
+.wpcf7 form label{
+    font-weight: 500;
+}
+
+.wpcf7 form label span {
+    color: var(--px-danger);
+}
+
+.wpcf7 form input:not([type="submit"]),
+.wpcf7 form textarea { 
+    outline: none;
+    border: 2px solid #cfd7e3;
+    color: var(--px-body-color);
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.wpcf7 form input:focus-visible,
+.wpcf7 form textarea:focus-visible {
+    border-color: var(--px-primary);
+}
+
+.wpcf7-submit {
+    border-color: var(--px-primary) !important;
+    color: var(--px-primary) !important;
+}
+
+.wpcf7-submit:hover {
+    background: var(--px-primary);
+    color: var(--px-white) !important;
+}
+
+.contact_us-h1 {
+    border-radius: 10px;
+}
+
+.wpcf7-tel::placeholder{
+    color: var(--px-gray);
+}
+
+/*===========================================
+  19. Like and Unlike CSS
+===========================================*/
+.comment-body .wpulike {
+    padding-left: 65px;
+}
+
+.wpulike-default button.wp_ulike_btn {
+    background-color: var(--px-secondary);
+}
+
+.wpulike-default .wp_ulike_is_liked .wp_ulike_btn {
+    background: rgb(24 119 242 / 20%);
+}
+
+.wpulike-default button.wp_ulike_btn:focus,
+.wpulike-default button.wp_ulike_btn:hover {
+    color: rgb(24 119 242 / 100%);
+    background-color:rgb(24 119 242 / 20%);
+}
+
+.wpulike-default .wp_ulike_put_image:after{
+    filter: grayscale(1) !important;
+    background: url(../../assets/img/like-button.svg) !important;
+}
+
+.wpulike-default .wp_ulike_put_image:hover:after{
+    filter: grayscale(0) !important;
+}
+
+.wpulike-default .wp_ulike_put_image.wp_ulike_btn_is_active:after {
+    filter: grayscale(0) !important;
+    background: url(../../assets/img/like-button.svg) !important;
+}
+
+
+/*===========================================
+  20. WP-block CSS
+===========================================*/
+/* Sample Page */
+.wp-block-quote {
+    border-left: 2px solid var(--px-dark);
+    padding-left: 10px;
+}
+
+/* wp admin bar --------------
+----------------------------*/
+.wp_adminbar {
+    top: -35px !important;
+}
