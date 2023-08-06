@@ -1,0 +1,30 @@
+/*----------------------------------------*/
+/*  00. Footer CSS
+/*----------------------------------------*/
+
+.footer__area{
+
+    .navbar-brand{
+        line-height: 1;
+    }
+    
+    .social__media{
+        column-gap: 20px;
+        li a {
+            color: var(--#{$prefix}gray);
+            background: transparent;
+            width: auto;
+            height: auto;
+            line-height: 1;
+            border: none;
+            border-radius: 0;
+            &:hover{
+                color: rgba(var(--#{$prefix}primary-rgb), 1);
+            }
+        }
+    }
+}
+
+.copyright_content {
+    box-shadow: 0 -1px 0px 0 rgba(var(--#{$prefix}dark-rgb), 0.1);
+}
