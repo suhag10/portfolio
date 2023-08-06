@@ -47,7 +47,7 @@ return `
                 </div>
                 <div class="col-xl-6">
                     <div class="about_text pt-70">
-                        <p>                
+                        <p hidden>                
                             I&apos;m a web developer with ${experience} years of experience. 
                             My gig is especially for <b>WordPress E-commerce Websites.</b> 
                             I will do properly WordPress E-commerce Website of your product and other websites.
