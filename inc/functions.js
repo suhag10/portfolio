@@ -3,7 +3,7 @@
  *  Theme Name: BarakaUI
  *  Author: github.com/suhag10
  *  Version: 2.2.1
- *  creation: 2022-Jul
+ *  Creation: 2022-Jul
  *  Update: 06-08-2023
  *  Write Javascript code!
 */
@@ -21,7 +21,7 @@ const prefix = "barakaUI";
 
 const ui_plus   = '&plus;';
 const ui_dash   = '&mdash;';
-const ui_number = ui_plus + 88013112519250;
+const ui_number = ui_plus + 8801311251925;
 const ui_email  = "hellosuhag140@gmail.com";
 
 // Date Tima
@@ -267,7 +267,13 @@ function ui_aboutText() {
     //         I will do properly WordPress E-commerce Website of your product and other websites.
     //     </p>
     // `;
-    return ``;
+    return `
+        <p>
+            As a dedicated web developer, I am passionate about crafting exceptional websites. 
+            With ${experience} years of experience in this field, I possess extensive knowledge of various web technologies. 
+            My ultimate goal is to deliver web experiences that surpass my client's expectations.
+        </p>
+    `;
 }
 
 // About Expert
