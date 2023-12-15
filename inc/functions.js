@@ -251,7 +251,7 @@ function ui_about_sectionTitle() {
     return `
         <span>About Me</span>
         <h2 ${animate}>
-            hi, my name is Suhag Ahmed. 
+            Hi, my name is Suhag Ahmed. 
             I&apos;m a web developer with ${experience} years of experience,
             My focus on website quality.
         </h2>
