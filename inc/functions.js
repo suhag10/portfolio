@@ -504,7 +504,7 @@ function ui_qualificationContent(){
             text:  ""
         },
         {
-            title: "MC College, Sylhet. [2020]",
+            title: "MC College, Sylhet. [2019]",
             name:  "Bachelor of Social Science (BSS)",
             icon:  "fa-graduation-cap",
             text:  ""
