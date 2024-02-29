@@ -7,7 +7,7 @@ const db_blog = [
         day: 12,
         month: "May",
         year: 2023,
-        title: "Update Website v2.1.1",
+        title: "Update Website v1.0.0",
         subtitle: "Design with SCSS &#9679; Class change &#9679; Masonry.js &#9679; typed.js &#9679; ScrollUp.js &#9679; JavaScript Array forLoop &#9679; Dark Mode",
         thumbnails: "",
         display: "on",
@@ -179,8 +179,8 @@ input[type=number] {
         day: 6,
         month: "Aug",
         year: 2023,
-        title: "Update Website v2.2.1",
-        subtitle: "BarakaUI Theme Update v2.2.1",
+        title: "Update Website v1.1.0",
+        subtitle: "BarakaUI Theme Update v1.1.0",
         thumbnails: "blog-4.jpg",
         display: "",
         content: `
@@ -189,7 +189,7 @@ input[type=number] {
                 <ul class="list-style-unset pl-20 mt-10">
                     <li>Theme Name: BarakaUI</li>
                     <li>Author: github.com/suhag10</li>
-                    <li>Version: 2.2.1</li>
+                    <li>Version: 1.1.0</li>
                     <li>Creation: 2022-Jul</li>
                     <li>Update: 2023-Aug-6</li>
                     <li>Writing code with Javascript!</li>
