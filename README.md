@@ -1,13 +1,13 @@
 ## BarakaUI Theme
 - Theme Name: BarakaUI
 - Author: github.com/suhag10
-- Version: 2.2.1
+- Version: 1.1.0
 - Creation: 2022-Jul
 - Update: 2023-Aug-6
 - Writing code with Javascript!
 
 <!-- ### link -->
-&#128279;  : [Linkedin](https://www.linkedin.com/in/suhag11/ "Linkedin") &#10625; [Twitter](https://twitter.com/suhag41 "Twitter") &#10625; [Github](https://github.com/suhag10 "Github")
+&#128279;  : [Linkedin](https://www.linkedin.com/in/suhag11/ "Linkedin") &#10625; [Twitter](https://twitter.com/suhag_11 "Twitter") &#10625; [Github](https://github.com/suhag10 "Github")
 
 <!-- ### code used -->
  ![](https://img.shields.io/badge/HTML5-gray?logo=html5) ![](https://img.shields.io/badge/CSS3-gray?logo=css3) ![](https://img.shields.io/badge/SASS-gray?logo=sass) ![](https://img.shields.io/badge/Javascript-gray?logo=javascript)

@@ -2,7 +2,7 @@
 /*
  *  Theme Name: BarakaUI
  *  Author: github.com/suhag10
- *  Version: 2.2.1
+ *  Version: 1.1.0
  *  Creation: 2022-Jul
  *  Update: 06-08-2023
  *  Write Javascript code!
@@ -10,7 +10,7 @@
 
 // Variables init------------------------->
 // ----------------------------------------
-const version           = '3.0.0';
+const version           = '1.1.0';
 const UI_BARAKA_VERSION = version;
 const UI_BARAKA_FILE    = './';
 const UI_BARAKA_URL     =  UI_BARAKA_FILE;
@@ -186,9 +186,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // ----------------------------------------------
 const db_social = [
     {title:"linkedin",   icon:'<i class="fa-brands fa-linkedin"></i>',    link:"https://www.linkedin.com/in/suhag11/"},
-    {title:"twitter",    icon:'<i class="fa-brands fa-twitter"></i>',     link:"https://twitter.com/suhag41"},
-    {title:"instagram",  icon:'<i class="fa-brands fa-instagram"></i>',   link:"https://www.instagram.com/suhagDeveloper"},
-    {title:"facebook",   icon:'<i class="fa-brands fa-facebook-f"></i>',  link:"https://www.facebook.com/suhagDeveloper"},
+    {title:"twitter",    icon:'<i class="fa-brands fa-twitter"></i>',     link:"https://twitter.com/suhag_11"},
+    {title:"instagram",  icon:'<i class="fa-brands fa-instagram"></i>',   link:"https://www.instagram.com/suhag_11"},
+    {title:"facebook",   icon:'<i class="fa-brands fa-facebook-f"></i>',  link:"https://www.facebook.com/suhag.info"},
     {title:"github",     icon:'<i class="fa-brands fa-github"></i>',      link:"https://github.com/suhag10"},
     {title:"youtube",    icon:'<i class="fa-brands fa-youtube"></i>',     link:"https://www.youtube.com/@suhag10"},
 ];
