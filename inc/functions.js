@@ -21,7 +21,7 @@ const prefix = "barakaUI";
 
 const ui_plus   = '&plus;';
 const ui_dash   = '&mdash;';
-const ui_number = ui_plus + 8809611072927;
+const ui_number = ui_plus + 8801311251925;
 const ui_email  = "hellosuhag140@gmail.com";
 
 // Date Tima
@@ -89,7 +89,7 @@ ui_head();
 
 // undefined link ------------------>
 // ----------------------------------
-function und_link() {
+function undefined_link() {
     return 'javascript:void(0)';
 }
 
@@ -188,7 +188,7 @@ const db_social = [
     {title:"linkedin",   icon:'<i class="fa-brands fa-linkedin"></i>',    link:"https://www.linkedin.com/in/suhag11/"},
     {title:"twitter",    icon:'<i class="fa-brands fa-twitter"></i>',     link:"https://twitter.com/suhag_11"},
     {title:"instagram",  icon:'<i class="fa-brands fa-instagram"></i>',   link:"https://www.instagram.com/suhag_11"},
-    {title:"facebook",   icon:'<i class="fa-brands fa-facebook-f"></i>',  link:"https://www.facebook.com/suhag.info"},
+    {title:"facebook",   icon:'<i class="fa-brands fa-facebook-f"></i>',  link:"https://www.facebook.com/suhagahmed.me"},
     {title:"github",     icon:'<i class="fa-brands fa-github"></i>',      link:"https://github.com/suhag10"},
     {title:"youtube",    icon:'<i class="fa-brands fa-youtube"></i>',     link:"https://www.youtube.com/@suhag10"},
 ];
@@ -251,27 +251,19 @@ function ui_about_sectionTitle() {
     return `
         <span>About Me</span>
         <h2 ${animate}>
-            Hi, my name is Suhag Ahmed. 
-            I&apos;m a web developer with ${experience} years of experience,
-            My focus on website quality.
+            Hi, my name is Suhag Ahmed. I'm a web developer with ${experience} years of experience, Focusing on website quality.
         </h2>
     `;
 }
 
 // About Text
 function ui_aboutText() {
-    // return `
-    //     <p>                
-    //         I&apos;m a web developer with ${experience} years of experience. 
-    //         My gig is especially for <b>WordPress E-commerce Websites.</b> 
-    //         I will do properly WordPress E-commerce Website of your product and other websites.
-    //     </p>
-    // `;
     return `
         <p>
-            As a dedicated web developer, I am passionate about crafting exceptional websites. 
-            With ${experience} years of experience in this field, I possess extensive knowledge of various web technologies. 
-            My ultimate goal is to deliver web experiences that surpass my client's expectations.
+            As a dedicated web developer passionate about e-commerce and designing outstanding websites, 
+            I&apos;ve worked in this field for ${experience} years. Throughout this time, 
+            I&apos;ve acquired extensive knowledge of various web technologies. 
+            My primary objective is to deliver web experiences that exceed my clients' expectations.
         </p>
     `;
 }
@@ -285,6 +277,7 @@ function ui_aboutExpert() {
             <li>Website to HTML.</li>
             <li>Responsive to all Devices.</li>
             <li>Bootstrap CSS Framework.</li>
+            <li>Tailwindcss CSS Framework.</li>
             <li>jQuery Framework.</li>
             <li>Website Bug Fixing.</li>
             <li>PSD to WordPress.</li>
@@ -292,11 +285,11 @@ function ui_aboutExpert() {
             <li>Website to WordPress.</li>
         </ul>
         <ul>
+            <li><b>WordPress Plugin Development.</b></li>
+            <li><b>WordPress Theme Development.</b></li>
             <li>WordPress Customization.</li>
-            <li>WordPress Theme Customization.</li>
-            <li>WordPress Theme Development.</li>
             <li>WordPress Plugin Customization.</li>
-            <li>WordPress Plugin Development.</li>
+            <li>WordPress Theme Customization.</li>
             <li>WordPress E-commerce Website-Customization.</li>
             <li>WordPress WooCommerce Themes-Customization.</li>
             <li>WordPress Bug Fixing.</li>
@@ -363,13 +356,13 @@ function ui_projectMasonry(){
 // Project Function
 function ui_projectDB(set){
     const db_project = [
-        {
-            name:  "Project Nubis",
-            title: "Web Design",
-            image: "portfolio-4.png",
-            cat:   "cat4",
-            link:  "https://suhag10.github.io/project-nubis/"
-        },
+        // {
+        //     name:  "Project Nubis",
+        //     title: "Web Design",
+        //     image: "portfolio-4.png",
+        //     cat:   "cat4",
+        //     link:  "https://suhag10.github.io/project-nubis/"
+        // },
         {
             name:  "Project Bemax",
             title: "Web Design",
@@ -406,18 +399,18 @@ function ui_projectDB(set){
             link:  "https://suhag10.github.io/digital-marketplace/"
         },
         {
-            name:  "Victory day",
+            name:  "Victory Day",
             title: "HTML & CSS",
             image: "",
             cat:   "cat1",
-            link:  "https://suhag10.github.io/16D-victory-day-bd-project/"
+            link:  "https://suhag10.github.io/victory-day/"
         },
         {
-            name:  "Bangladesh Visit",
+            name:  "Visit Bangladesh",
             title: "Design Inspiration",
             image: "portfolio.jpg",
             cat:   "cat3",
-            link:  "https://suhag10.github.io/bangladesh-visit/"
+            link:  "https://suhag10.github.io/visit-bangladesh/"
         },      
     ];
 
@@ -456,14 +449,26 @@ function ui_experienceContent(){
             text:  ""
         },
         {
-            title: "Fiverr.com [2017]",
+            title: "Fiverr [2017]",
             name:  "Graphic Designer",
             icon:  "fa-briefcase",
             text:  ""
         },
         {
-            title: "Fiverr.com [2021]",
-            name:  "Web Development",
+            title: "Freelancer Lab Sylhet [2021]",
+            name:  "Web Application Developer",
+            icon:  "fa-briefcase",
+            text:  ""
+        },
+        {
+            title: "Fiverr [2022]",
+            name:  "Web Application Developer",
+            icon:  "fa-briefcase",
+            text:  ""
+        },
+        {
+            title: "Upwork [Feb 2024 - Present]",
+            name:  "WordPress Developer",
             icon:  "fa-briefcase",
             text:  ""
         },
@@ -479,7 +484,7 @@ function ui_experienceContent(){
                         <i class="fa-duotone ${icon}"></i>
                         <div class="experience_title ml-20">
                             <span>${title}</span>
-                            <a href="${und_link()}" target="${target_link("s")}"><h3>${name}</h3></a>
+                            <a href="${undefined_link()}" target="${target_link("s")}"><h3>${name}</h3></a>
                         </div>
                     </div>
                     <!-- <p class="d-none m-0">${text}</p> -->
@@ -498,13 +503,19 @@ const education_img_2 = "./assets/images/education/education-2.jpg";
 function ui_qualificationContent(){
     const db_qualification = [
         {
+            title: "weDevs Academy (Online Course). [2024]",
+            name:  "WordPress Plugin Development",
+            icon:  "fa-code",
+            text:  ""
+        },
+        {
             title: "Freelancerlab, Sylhet. [2022]",
             name:  "Web Design & Web Development",
             icon:  "fa-code",
             text:  ""
         },
         {
-            title: "MC College, Sylhet. [2019]",
+            title: "MC College, Sylhet. [2022]",
             name:  "Bachelor of Social Science (BSS)",
             icon:  "fa-graduation-cap",
             text:  ""
