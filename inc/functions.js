@@ -356,13 +356,6 @@ function ui_projectMasonry(){
 // Project Function
 function ui_projectDB(set){
     const db_project = [
-        // {
-        //     name:  "Project Nubis",
-        //     title: "Web Design",
-        //     image: "portfolio-4.png",
-        //     cat:   "cat4",
-        //     link:  "https://suhag10.github.io/project-nubis/"
-        // },
         {
             name:  "Project Bemax",
             title: "Web Design",
