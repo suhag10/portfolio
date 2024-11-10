@@ -1,0 +1,10 @@
+<IfModule mod_headers.c>
+    <FilesMatch "\\.(js|css|html|htm|xml)$">
+        SetOutputFilter DEFLATE
+    </FilesMatch>
+</IfModule>
+
+# Enable caching for JavaScript files
+<FilesMatch "\.(js|css|html)$">
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>

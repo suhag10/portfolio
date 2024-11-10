@@ -1,0 +1,47 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@config "./tailwindcss-config.js";
+
+@layer base {}
+@layer components {}
+@layer utilities {}
+
+/* components */
+.card {
+    background-color: #64748b;
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.6');
+    box-shadow: theme('boxShadow.xl');
+}
+
+.row {
+    --gutter-x: 1.5rem;
+    --gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--gutter-y));
+    margin-right: calc(-.5 * var(--gutter-x));
+    margin-left: calc(-.5 * var(--gutter-x));
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--gutter-x) * .5);
+    padding-left: calc(var(--gutter-x) * .5);
+    margin-top: var(--gutter-y);
+}
+
+.flex-0 {flex: 0 0 auto;}
+
+/* 
+    sm	640px	@media (min-width: 640px) { ... }
+    md	768px	@media (min-width: 768px) { ... }
+    lg	1024px	@media (min-width: 1024px) { ... }
+    xl	1280px	@media (min-width: 1280px) { ... }
+    2xl	1536px	@media (min-width: 1536px) { ... } 
+*/
