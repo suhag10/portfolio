@@ -1,0 +1,373 @@
+/* -----------------------
+ 01. Base
+ 02. Components
+ 03. Utilities
+ 04. Header
+ 05. Sidebar
+ 06. Hero
+ 07. About Me
+ 08. Skill & Experiences
+ 09. My Qualification
+ 10. Complete Project
+ 11. CTA
+ 12. Web Design
+ 13. Testimonial
+ 14. Articles & News
+ 15. Footer
+ 16. Responsive
+----------------------- */
+
+/* ======================================================== */
+/* Base                                                     */
+/* ======================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --theme-primary: #008080;
+    --theme-primary-rgb: 0 128 128;
+
+    --transparent: 'transparent';
+    --black      : '#000';
+    --white      : '#fff';
+    --dark       : '#0d1117';
+    --light      : '#F5F6F6';
+    --heading    : '#03041C';
+    --paragraph  : '#5E6167';
+    --secondary  : '#E9ECEF';
+
+    --theme-1 : '#E9ECEF';
+    --theme-2 : '#E6E6EC';
+    --theme-3 : '#2C2D3C';
+    --theme-4 : '#EFF1F8';
+    --theme-5 : '#E7F2F2';
+    --theme-6 : '#FFB422';
+    --theme-7 : '#0D121E';
+    --theme-8 : '#787D87';
+    --theme-9 : '#F1E2CB';
+    --theme-10: '#D96800';
+    --theme-11: '#53535A';
+    --theme-12: '#D9E7DB';
+    --theme-13: '#1BA930';
+    --theme-14: '#E8EBF0';
+    --theme-15: '#D1D6DF';
+
+    /* slate */
+    --slate-50: '#f8fafc';
+    --slate-100: '#f1f5f9';
+    --slate-200: '#e2e8f0';
+    --slate-300: '#cbd5e1';
+    --slate-400: '#94a3b8';
+    --slate-500: '#64748b';
+    --slate-600: '#475569';
+    --slate-700: '#334155';
+    --slate-800: '#1e293b';
+    --slate-900: '#0f172a';
+    --slate-950: '#020617';
+    /* gray */
+    --gray-50: '#f9fafb';
+    --gray-100: '#f3f4f6';
+    --gray-200: '#e5e7eb';
+    --gray-300: '#d1d5db';
+    --gray-400: '#9ca3af';
+    --gray-500: '#6b7280';
+    --gray-600: '#4b5563';
+    --gray-700: '#374151';
+    --gray-800: '#1f2937';
+    --gray-900: '#111827';
+    --gray-950: '#030712';
+    /* emerald */
+    --emerald-50: '#ecfdf5';
+    --emerald-100: '#d1fae5';
+    --emerald-200: '#a7f3d0';
+    --emerald-300: '#6ee7b7';
+    --emerald-400: '#34d399';
+    --emerald-500: '#10b981';
+    --emerald-600: '#059669';
+    --emerald-700: '#047857';
+    --emerald-800: '#065f46';
+    --emerald-900: '#064e3b';
+    --emerald-950: '#022c22';
+    /* teal */
+    --teal-50: '#f0fdfa';
+    --teal-100: '#ccfbf1';
+    --teal-200: '#99f6e4';
+    --teal-300: '#5eead4';
+    --teal-400: '#2dd4bf';
+    --teal-500: '#14b8a6';
+    --teal-600: '#0d9488';
+    --teal-700: '#0f766e';
+    --teal-800: '#115e59';
+    --teal-900: '#134e4a';
+    --teal-950: '#042f2e';
+    /* rose */
+    --rose-50: '#fff1f2';
+    --rose-100: '#ffe4e6';
+    --rose-200: '#fecdd3';
+    --rose-300: '#fda4af';
+    --rose-400: '#fb7185';
+    --rose-500: '#f43f5e';
+    --rose-600: '#e11d48';
+    --rose-700: '#be123c';
+    --rose-800: '#9f1239';
+    --rose-900: '#881337';
+    --rose-950: '#4c0519';
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+html,
+:host {
+    line-height: 1.5; /* 26px */
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    color: inherit;
+    line-height: inherit;
+}
+
+hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+}
+
+abbr:where([title]) {
+    text-decoration: underline dotted;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+b,strong {
+    font-weight: bolder;
+}
+
+code,kbd,samp,pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
+
+:-moz-focusring {
+    outline: auto;
+}
+
+:-moz-ui-invalid {
+    box-shadow: none;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type='search'] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+summary {
+    display: list-item;
+}
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+    margin: 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    padding: 0;
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+dialog {
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    opacity: 1;
+    color: #9ca3af;
+}
+
+button,
+[role="button"] {
+    cursor: pointer;
+}
+
+/*
+ Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+    cursor: default;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: block;
+    vertical-align: middle;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+[hidden] {
+    display: none;
+}
+
+/* Reset heading */
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Oswald", system-ui, sans-serif;
+    color: #03041C;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {font-size: 40px;}
+h2 {font-size: 36px;}
+h3 {font-size: 24px;}
+h4 {font-size: 20px;}
+h5 {font-size: 16px;}
+h6 {font-size: 14px;}
+
+/* Reset paragraph */
+p {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #525258;
+    line-height: 26px;
+}

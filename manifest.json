@@ -1,0 +1,17 @@
+{
+    "icons": [
+      {
+        "src": "assets/images/logo.gif",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "name": "Suhag Ahmed - Web Developer & WordPress Specialist",
+    "short_name": "Suhag Dev Portfolio",
+    "description": "Explore Suhag Ahmed portfolio of WordPress plugins, custom Elementor widgets, and advanced web development projects using PHP, JavaScript, TailwindCSS, and more.",
+    "orientation": "portrait",
+    "display": "standalone",
+    "start_url": "https://suhag10.github.io/portfolio/index.html",
+    "background_color": "#ffffff",
+    "theme_color": "#0d6efd"
+}

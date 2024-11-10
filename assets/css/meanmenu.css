@@ -1,0 +1,291 @@
+
+/*! #######################################################################
+
+	MeanMenu 2.0.7
+	--------
+
+	To be used with jquery.meanmenu.js by Chris Wharton (http://www.meanthemes.com/plugins/meanmenu/)
+
+####################################################################### */
+
+/* hide the link until viewport size is reached */
+a.meanmenu-reveal {
+	display: none;
+}
+
+/* when under viewport size, .mean-container is added to body */
+.mean-container .mean-bar {
+	float: left;
+	width: 100%;
+	position: relative;
+	background: #0c1923;
+	padding: 4px 0;
+	min-height: 42px;
+	z-index: 999999;
+}
+
+.mean-container a.meanmenu-reveal {
+	width: 22px;
+	height: 22px;
+	padding: 13px 13px 11px 13px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	text-indent: -9999em;
+	line-height: 22px;
+	font-size: 1px;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+.mean-container a.meanmenu-reveal span {
+	display: block;
+	background: #fff;
+	height: 3px;
+	margin-top: 3px;
+}
+
+.mean-container .mean-nav {
+	float: left;
+	width: 100%;
+	background: transparent; /* #0c1923; */
+	margin-top: 44px;
+}
+
+.mean-container .mean-nav ul {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	list-style-type: none;
+}
+
+.mean-container .mean-nav ul li {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.mean-container .mean-nav ul li a {
+	display: block;
+	float: left;
+	width: 90%;
+	padding: 1em 5%;
+	margin: 0;
+	text-align: left;
+	color: #fff;
+	border-top: 1px solid #383838;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.mean-container .mean-nav ul li li a {
+	width: 80%;
+	padding: 1em 10%;
+	border-top: 1px solid #f1f1f1;
+	border-top: 1px solid rgba(255,255,255,0.25);
+	opacity: 0.75;
+	filter: alpha(opacity=75);
+	text-shadow: none !important;
+	visibility: visible;
+}
+
+.mean-container .mean-nav ul li.mean-last a {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.mean-container .mean-nav ul li li li a {
+	width: 70%;
+	padding: 1em 15%;
+}
+
+.mean-container .mean-nav ul li li li li a {
+	width: 60%;
+	padding: 1em 20%;
+}
+
+.mean-container .mean-nav ul li li li li li a {
+	width: 50%;
+	padding: 1em 25%;
+}
+
+.mean-container .mean-nav ul li a:hover {
+	background: #252525;
+	background: rgba(255,255,255,0.1);
+}
+
+.mean-container .mean-nav ul li a.mean-expand {
+	margin-top: 1px;
+	width: 26px;
+	height: 32px;
+	padding: 12px !important;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+	font-weight: 700;
+	background: rgba(255,255,255,0.1);
+	border: none !important;
+	border-left: 1px solid rgba(255,255,255,0.4) !important;
+	border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+}
+
+.mean-container .mean-nav ul li a.mean-expand:hover {
+	background: rgba(0,0,0,0.9);
+}
+
+.mean-container .mean-push {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+
+.mean-nav .wrapper {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* Fix for box sizing on Foundation Framework etc. */
+.mean-container .mean-bar, .mean-container .mean-bar * {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+
+.mean-remove {
+	display: none !important;
+}
+
+/* ============================================================= */
+/* Sidebar Reset Style											 */
+/* ============================================================= */
+.mobile-menu .mean-bar {
+    background: #E9ECEF;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 4px 8px 8px;
+    width: auto;
+    float: none;
+}
+
+.meanmenu-reveal > i {
+    animation: mobile_menu_close .15s forwards ease-in-out alternate;
+}
+
+.meanmenu-reveal.meanclose i {
+    animation: mobile_menu_open .15s forwards ease-in-out alternate;
+}
+
+@keyframes mobile_menu_open {
+    from {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    } to {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes mobile_menu_close {
+    from {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+    } to {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.mobile-menu a.meanmenu-reveal {
+    text-indent: unset;
+    font-size: 18px;
+}
+
+.mobile-menu .mean-nav ul {
+    border: none;
+    display: inline-block;
+}
+
+.mobile-menu .mean-nav ul li a:not(.mean-expand) {
+    font-family: Oswald, system-ui, sans-serif;
+    color: #03041C;
+    background: #fff;
+    padding: 8px 15px;
+    display: block;
+    width: auto !important;
+    float: none;
+    border-top: none;
+    border-radius: 0px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.mobile-menu .has-dropdown ul.submenu li:first-child a,
+.mobile-menu .mean-nav ul li:first-child a {
+    border-top-left-radius: .375rem;
+    border-top-right-radius: .375rem;
+}
+
+.mobile-menu .has-dropdown ul.submenu li:last-child a,
+.mobile-menu .mean-nav ul li:last-child a {
+    border-bottom-left-radius: .375rem;
+    border-bottom-right-radius: .375rem;
+}
+
+.mobile-menu ul li:not(:last-child) a {
+    margin-bottom: 1px;
+}
+
+.mobile-menu ul li a:hover {
+    color: #fff !important;
+    background: #008080 !important;
+}
+
+.mobile-menu [aria-current="page"] {
+    color: #fff !important;
+    background: #008080 !important;
+}
+
+/* child classes */
+.mobile-menu .has-dropdown ul.submenu {
+    background: transparent;
+    padding: 4px;
+    width: auto;
+    height: 100%;
+    display: inline-block;
+}
+
+.mean-expand {
+    height: 10px !important;
+    line-height: 10px;
+    color: #03041C !important;
+}
+
+.mean-expand:hover {
+    color: white !important;
+}
+
+.mean-expand.mean-clicked {
+    line-height: 8px;
+}

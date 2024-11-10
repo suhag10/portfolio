@@ -1,0 +1,4 @@
+<FilesMatch "\\.(js|css|html|htm|xml)$">
+    SetOutputFilter DEFLATE
+    Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
